@@ -12,7 +12,6 @@ function calculate() {
   let totalRevenue = price * quantity;
   let profit = totalRevenue - totalCost;
 
-  // Fixed German VAT at 19%
   let germanTax = profit * 0.19;
   let profitAfterTax = profit - germanTax;
   let profitMargin = (profitAfterTax / totalRevenue) * 100;
