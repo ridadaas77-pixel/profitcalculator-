@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #1a1a1a;
   color: #fff;
   display: flex;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background: #2b3a42;
+  background: #2b2b2b;
   padding: 30px;
   border-radius: 16px;
   width: 350px;
@@ -20,12 +20,13 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 22px;
 }
 
 .calculator-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .input-group {
@@ -39,27 +40,44 @@ input {
   border: none;
   margin-top: 5px;
   font-size: 16px;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #aaa;
 }
 
 button {
   padding: 12px;
   border-radius: 8px;
   border: none;
-  background: #22cc88;
-  color: #000;
+  background: #ff6600;
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
-  background: #1abb74;
+  background: #e65c00;
 }
 
 #result {
   margin-top: 20px;
   padding: 15px;
   border-radius: 12px;
-  background: #1f2a30;
+  background: #1f1f1f;
   font-size: 16px;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  input, button {
+    font-size: 16px;
+  }
+}
+
