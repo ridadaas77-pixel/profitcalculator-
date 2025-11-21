@@ -19,6 +19,5 @@ function calculate() {
     <strong>Total Revenue:</strong> €${totalRevenue}<br>
     <strong>Profit:</strong> €${profit}<br>
     <strong>Profit Margin:</strong> ${margin.toFixed(2)}%<br>
-    <strong>Break-even point:</strong> ${breakEven} items
   `;
 }
