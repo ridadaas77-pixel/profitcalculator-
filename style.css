@@ -23,8 +23,9 @@ h1 {
 }
 
 .calculator-form {
-  display: grid;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .input-group {
