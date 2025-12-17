@@ -1,3 +1,4 @@
+/* script.js */
 const texts = {
 en: {
 title: "Business Profit Calculator",
@@ -55,20 +56,3 @@ const profit = (price - cost) * quantity;
 
 let taxRate = 0;
 if (tax.value === "de") taxRate = 0.19;
-if (tax.value === "us") taxRate = 0.10;
-if (tax.value === "uk") taxRate = 0.20;
-
-
-const taxAmount = profit * taxRate;
-const netProfit = profit - taxAmount;
-const margin = (netProfit / revenue) * 100;
-
-
-result.innerHTML = `
-<strong>Revenue:</strong> €${revenue.toFixed(2)}<br>
-<strong>Profit before tax:</strong> €${profit.toFixed(2)}<br>
-<strong>Tax:</strong> €${taxAmount.toFixed(2)}<br>
-<strong>Profit after tax:</strong> €${netProfit.toFixed(2)}<br>
-<strong>Margin:</strong> ${margin.toFixed(2)}%
-`;
-}
