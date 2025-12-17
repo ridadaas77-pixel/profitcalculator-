@@ -1,83 +1,33 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #1a1a1a;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+border-radius: 8px;
+border: none;
+background: #1f1f1f;
+color: #fff;
 }
 
-.container {
-  background: #2b2b2b;
-  padding: 30px;
-  border-radius: 16px;
-  width: 350px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 22px;
-}
-
-.calculator-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  margin-top: 5px;
-  font-size: 16px;
-  background: #1f1f1f;
-  color: #fff;
-}
-
-input::placeholder {
-  color: #aaa;
-}
 
 button {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  background: #ff6600;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+padding: 12px;
+border-radius: 8px;
+border: none;
+background: #ff6600;
+color: #fff;
+font-weight: bold;
+cursor: pointer;
 }
 
-button:hover {
-  background: #e65c00;
-}
 
 #result {
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 12px;
-  background: #1f1f1f;
-  font-size: 16px;
+margin-top: 15px;
+padding: 12px;
+border-radius: 10px;
+background: #1f1f1f;
 }
 
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-    padding: 20px;
-  }
-  input, button {
-    font-size: 16px;
-  }
-}
 
+footer {
+margin-top: 10px;
+text-align: center;
+font-size: 12px;
+color: #aaa;
+}
